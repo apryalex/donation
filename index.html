@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enfants du Cobalt Libre (ECL)</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav ul li {
+            margin: 0;
+            padding: 0.5rem 1rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .block {
+            width: 80%;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .block h2 {
+            margin-top: 0;
+        }
+
+        .block p {
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .block:hover p {
+            max-height: 1000px; /* Adjust the value as needed */
+            transition: max-height 0.5s ease-in;
+           
+        }
+
+       
+
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Enfants du Cobalt Libre (ECL)</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/promesse_don">Faire un don</a></li>
+                <li><a href="/promesses_enregistrees">Nos donateurs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="block">
+      <h2>Notre Cause</h2>
+      <p>Au cœur des terres africaines, loin des regards du monde, un lourd secret reste enfoui, plongeant dans l'ombre le destin de milliers d'enfants...</p>
+      <p>Ces enfants sont piégés dans un monde d'horreur et de désespoir...</p>
+  </div>
+
+
+  <div class="block">
+    <h2>Agir Ensemble</h2>
+    <p>Mais dans cette noirceur, une lueur d'espoir persiste. Face à cette tragédie humaine, notre devoir d'êtres compatissants est clair : nous ne pouvons pas rester impassibles...</p>
+    <p>Nous sommes résolus à agir concrètement sur le terrain, libérant ces enfants des chaînes de leur labeur épuisant et dangereux...</p>
+    <p>Nous aspirons à leur offrir un refuge, un abri où l'éducation et les soins médicaux viennent apaiser leurs blessures, tant physiques que psychologiques...</p>
+</div>
+
+<div class="block">
+  <h2>Faire un Don</h2>
+  <p>Chaque don, aussi modeste soit-il, est un rayon d'espoir dans la vie de ces jeunes âmes...</p>
+  <p>En nous rejoignant, vous devenez les gardiens d'une lumière qui éclairera leur chemin obscur...</p>
+  <p>Chaque geste compte dans cette quête humanitaire cruciale...</p>
+  <p>Ensemble, nous bâtissons un monde où chaque enfant peut s'épanouir, où chaque sourire retrouvé est une victoire sur l'adversité...</p>
+  <p>Merci d'être à nos côtés dans cette noble quête.</p>
+  <p><a href="/promesse_don">Faites un don pour soutenir notre action !</a></p>
+</div>
+
+    <footer>
+        <p>Contactez-nous : contact@association.org</p>
+    </footer>
+</body>
+</html>

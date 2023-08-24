@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Faire une promesse de don</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+   
+</head>
+<body>
+    <header>
+        <h1>Faire une promesse de don</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/promesse_don">Promesse de don</a></li>
+                <li><a href="/promesses_enregistrees">Promesses enregistrées</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <form action="/promesse_don" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="adresse">Adresse :</label>
+            <input type="text" id="adresse" name="adresse" required>
+
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="somme_promise">Somme promise :</label>
+            <input type="number" id="somme_promise" name="somme_promise" required>
+
+            <input type="checkbox" id="conditions" name="conditions" required>
+            <label for="conditions">J'ai pris connaissance des conditions de don</label>
+
+            <input type="submit" value="Faire une promesse de don">
+        </form>
+    </div>
+
+    <footer>
+        <p>Contactez-nous : contact@association.org</p>
+    </footer>
+</body>
+</html>
